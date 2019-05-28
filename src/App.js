@@ -4,12 +4,14 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './reducers';
 
+import { Header } from './components/common';
+
 class App extends React.Component {
   render() {
     return (
       <Provider store={createStore(reducers)}>
         <View>
-          <Text>TechStack</Text>
+          <Header headerText="Tech Stack" />
         </View>
       </Provider>
     );
